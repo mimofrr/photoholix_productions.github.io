@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/07d3c7f54c.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Photoholix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"   
+   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+</head>
+<body>
+<!--Navigation section-->
+<div class="navbar">
+    <div class="max-width">
+        <div class="logo">
+            <a href="Homepage.html">
+                <i class="fa-solid fa-camera"></i>
+                <span>
+                    Photoholix_Productions
+            </span></a>
+        </div>
+        <ul class="menu">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Home section -->
+<section class="home">
+    <div class="max-width">
+        <div class="home-content">
+            <a href="#">Get to Know more about us</a>
+        </div>
+    </div>
+</section>
+
+ <!-- About section -->
+
+ <section class="about">
+    <h2 class="title">Get To know Photoholix_Productions</h2>
+    <div class="max-width">
+        <div class="card">
+        <div class="left">
+            <img src="Photoholix/WhatsApp Image 2023-03-03 at 17.13.58.jpg" alt="">
+        </div>
+        <div class="right">
+            <h3>About</h3>
+            <p>We are a platform of passionate and commited photographers who value customer satisfaction.
+                From taking pictures to editing to photoshop services.
+                Contact us for more information.
+            </p>
+            <a href="Contact.html"> Book our services now &#8594;</a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Featured section -->
+<section class="featured">
+    <h2 class="title">Latest Photoshoot</h2>
+    <div class="conatiner">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/Photoholix/Wedding-2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/Photoholix/Baby-shower 1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/Photoholix/Birthday-1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/Photoholix/Potrait-4.jpg" alt=""></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+</div>
+    </div>
+</section>
+    
+<!-- Footer -->
+<footer>
+    <span>Designed by <a href="#">Mimtech</a> Copyright <i class="fa fa-copyright"></i>2023. All rights reserved<span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  autoplay:{
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+  },
+);
+</script>
+</body>
+</html>
