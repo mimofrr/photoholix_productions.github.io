@@ -14,4 +14,10 @@ $(document).ready (function(){
         $('.menu-btn i').toggleClass('active');
     })
     })
+    // Default script task
+    exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+
+    // Build script task
+    exports.build = series(scssTask, jsTask);
+
     
